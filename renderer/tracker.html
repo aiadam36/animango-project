@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Animango • My List</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">🥭 Animango</div>
+    <div class="links">
+      <a href="./index.html">Home</a>
+      <a href="./tracker.html" class="active">My List</a>
+      <a href="./top-picks.html">My Top Picks</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="mylist-header">
+      <h1>My List</h1>
+      <p>Your saved anime & manga appear below.</p>
+    </div>
+
+    <div class="mylist-toolbar container">
+      <label for="statusFilter">Filter:</label>
+      <select id="statusFilter">
+        <option value="all" selected>All</option>
+        <option value="Plan">Plan</option>
+        <option value="Watching">Watching</option>
+        <option value="Reading">Reading</option>
+        <option value="Completed">Completed</option>
+        <option value="On Hold">On Hold</option>
+        <option value="Dropped">Dropped</option>
+      </select>
+      <span id="filterCount" class="count"></span>
+    </div>
+
+    <div id="list" class="container"></div>
+  </main>
+
+
+
+
+  <script src="./tracker.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Animango</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">🥭 Animango</div>
+    <div class="links">
+      <a href="./index.html">Home</a>
+      <a href="./tracker.html">My List</a>
+      <a href="./top-picks.html">My Top Picks</a>
+    </div>
+  </nav>
+
+  <div class="schedule-wrap">
+    <div class="schedule-controls">
+      <strong>📺 Schedules:</strong>
+      <select id="scheduleDay">
+        <option value="today" selected>Today</option>
+        <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+        <option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option>
+      </select>
+      <button id="btnSchedule">Show</button>
+    </div>
+    <div id="scheduleList" class="grid"></div>
+  </div>
+
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-logo-wrap">
+        <img src="../images/animango-logo.png" alt="Animango Logo" class="hero-logo">
+      </div>
+
+      <h1 class="hero-title">Animango</h1>
+
+      <p class="tagline">
+        Track your favorite <strong>anime</strong> & <strong>manga</strong> all in one place!  
+        Discover new shows, keep progress, and write your own reviews.
+      </p>
+    </section>
+
+
+    <!-- Centered section -->
+    <div class="search-section">
+      <h2>Find anime & manga</h2>
+      <div class="search">
+        <input id="q" type="text" placeholder="e.g. One Piece" />
+        <select id="type">
+          <option value="anime" selected>Anime</option>
+          <option value="manga">Manga</option>
+        </select>
+        <button id="btnSearch">Search</button>
+      </div>
+    </div>
+
+    <!-- Normal grid remains unchanged -->
+    <div id="msg" class="msg"></div>
+    <div id="results" class="grid"></div>
+  </main>
+
+  <section class="home-sections container">
+    <div class="section">
+      <h2>🔥 Top Popular</h2>
+      <div id="gridPopular" class="grid"></div>
+    </div>
+
+    <div class="section">
+      <h2>📺 Airing Now</h2>
+      <div id="gridAiring" class="grid"></div>
+    </div>
+
+    <div class="section">
+      <h2>⏭️ Upcoming</h2>
+      <div id="gridUpcoming" class="grid"></div>
+    </div>
+  </section>
+
+
+
+
+  
+
+  <!-- Anime Details Modal -->
+  <div id="detailsModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <img id="modalImage" src="" alt="">
+      <h2 id="modalTitle"></h2>
+      <p id="modalSynopsis"></p>
+      <p><strong>Genres:</strong> <span id="modalGenres"></span></p>
+      <p><strong>Producers:</strong> <span id="modalProducers"></span></p>
+      <p><strong>Source:</strong> <span id="modalSource"></span></p>
+      <p><strong>Rating:</strong> <span id="modalRating"></span></p>
+      <p><strong>Status:</strong> <span id="modalStatus"></span></p>
+      <p><strong>Episodes/Chapters:</strong> <span id="modalEpisodes"></span></p>
+      <p><strong>Rank:</strong> <span id="modalRank"></span></p>
+      <p><strong>Popularity:</strong> <span id="modalPop"></span></p>
+      <p><strong>Year:</strong> <span id="modalYear"></span></p>
+      <p><strong>Broadcast/Schedule:</strong> <span id="modalBroadcast"></span></p>
+      <a id="modalLink" href="#" target="_blank">View on MyAnimeList</a>
+    </div>
+  </div>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Animango • My Top Picks</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">🥭 Animango</div>
+    <div class="links">
+      <a href="./index.html">Home</a>
+      <a href="./tracker.html">My List</a>
+      <a class="./active" href="top-picks.html">My Top Picks</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="mylist-header">
+      <h1>My Top Picks</h1>
+      <p>Your personal collection of the anime & manga you love most.</p>
+    </div>
+
+    <div class="mylist-toolbar">
+      <label for="favType">Type:</label>
+      <select id="favType">
+        <option value="all" selected>All</option>
+        <option value="anime">Anime</option>
+        <option value="manga">Manga</option>
+      </select>
+
+      <label for="favSort">Sort:</label>
+      <select id="favSort">
+        <option value="added">Recently Added</option>
+        <option value="score">Score</option>
+        <option value="popularity">Popularity</option>
+        <option value="year">Year</option>
+      </select>
+
+      <span id="favCount" class="count"></span>
+    </div>
+
+    <!-- Single grid container that matches your CSS -->
+    <div id="topPicks"></div>
+  </main>
+
+  <script src="top-picks.js"></script>
+</body>
+</html>
