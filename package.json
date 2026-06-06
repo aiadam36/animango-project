@@ -4,8 +4,8 @@
   "description": "Anime & manga tracker (Electron + Jikan API)",
   "main": "main.js",
   "private": true,
-  "author": "",
-  "license": "ISC",
+  "author": "danizz140506-bot",
+  "license": "MIT",
   "scripts": {
     "start": "electron .",
     "pack:win": "electron-packager . Animango --platform=win32 --arch=x64 --out=dist --overwrite --ignore=\"^/(dist|node_modules/\\.cache)$\""
