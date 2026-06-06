@@ -32,7 +32,7 @@ Animango is a desktop application built with [Electron](https://www.electronjs.o
 
 1. **Clone or download the project:**
    ```bash
-   git clone https://github.com/your-username/animango.git
+   git clone https://github.com/danizz140506-bot/animango.git
    cd animango
    ```
 
