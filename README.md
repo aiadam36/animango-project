@@ -32,8 +32,8 @@ Animango is a desktop application built with [Electron](https://www.electronjs.o
 
 1. **Clone or download the project:**
    ```bash
-   git clone https://github.com/danizz140506-bot/animango.git
-   cd animango
+   git clone https://github.com/danizz140506-bot/animango-project.git
+   cd animango-project
    ```
 
 2. **Install dependencies:**
